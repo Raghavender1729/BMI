@@ -50,7 +50,7 @@ public class MainActivity<charSequence> extends AppCompatActivity implements Vie
     @Override
     public void onClick(View v) {
         if (v.getId()==R.id.button1){
-            if (!(editText1.getText().toString().equals("")&&editText2.getText().toString().equals(""))){
+            if (!(editText1.getText().toString().equals("")||editText2.getText().toString().equals(""))){
                 m = Double.parseDouble(editText1.getText().toString());
                 h = Double.parseDouble(editText2.getText().toString())/100;
                 a = m/(h*h);
